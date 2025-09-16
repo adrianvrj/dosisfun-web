@@ -1,6 +1,7 @@
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BlackMarketPage() {
   return (
@@ -64,12 +65,12 @@ export default function BlackMarketPage() {
               <button className="px-8 py-3 bg-primary text-white font-title font-bold text-lg rounded-lg hover:bg-primary/90 transition-colors uppercase">
                 COMING SOON
               </button>
-              <a
+              <Link
                 href="/"
                 className="px-8 py-3 bg-transparent text-foreground border-2 border-foreground font-body font-semibold text-lg rounded-lg hover:bg-foreground hover:text-background transition-colors"
               >
                 Back to Home
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -231,12 +232,12 @@ export default function BlackMarketPage() {
                 >
                   Get Early Access Updates
                 </a>
-                <a
+                <Link
                   href="/"
                   className="px-6 py-3 bg-transparent text-foreground border-2 border-foreground font-body font-medium rounded-lg hover:bg-foreground hover:text-background transition-colors"
                 >
                   Back to Home
-                </a>
+                </Link>
               </div>
             </div>
           </div>
