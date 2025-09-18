@@ -3,6 +3,7 @@ import { HeroSection } from './components/hero-section';
 import { WelcomeSection } from './components/welcome-section';
 import { OwnershipSection } from './components/ownership-section';
 import { EconomySection } from './components/economy-section';
+import { ContractSection } from './components/contract-section';
 import { Footer } from './components/footer';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <WelcomeSection />
         <OwnershipSection />
         <EconomySection />
+        <ContractSection />
       </main>
       <Footer />
     </div>
