@@ -7,60 +7,47 @@ export function ContractSection() {
   return (
     <section id="contract-section" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold text-primary text-center mb-12 lg:mb-16">
-          CONTRACT
-        </h2>
+        <div className="flex items-center justify-center gap-4 mb-12 lg:mb-16">
+          <Image
+            src="/dosis-token.png"
+            alt="DOSIS Token"
+            width={48}
+            height={48}
+            className="object-contain"
+          />
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold text-primary">
+            $DOSIS
+          </h2>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:grid-flow-col-dense">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:grid-flow-col-dense">
           <div className="space-y-6 lg:col-start-2">
-            <p className="text-lg font-body text-muted leading-relaxed">
-              <strong className="text-foreground">$DOSIS</strong> -
-              Used to buy in-game stuff and participate in the dosis.fun ecosystem.
-            </p>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/dosis-token.png"
+                alt="DOSIS Token"
+                width={32}
+                height={32}
+                className="object-contain"
+              />
+              <p className="text-lg font-body text-muted leading-relaxed">
+                <strong className="text-foreground">$DOSIS</strong> -
+                Used to buy in-game stuff and participate in the dosis.fun ecosystem.
+              </p>
+            </div>
 
-            <div className="bg-muted/20 border border-muted/30 rounded-lg p-6">
-              <Link
-                href="https://www.geckoterminal.com/starknet-alpha/pools/0x5840a26097ef00e681c622053d07d38b87769d090cebf5cdafdd8b0fae17761"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium mr-10"
-              >
-                View on GeckoTerminal
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </Link>
-              <Link
-                href="https://voyager.online/token/0x04cd1aebaeebed861072e715bc8963d6cd39b73aba0d563b03d7e8f008e09bdb"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
-              >
-                View on Voyager
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </Link>
+            {/* GeckoTerminal Embed */}
+            <div className="bg-muted/20 border border-muted/30 rounded-lg p-4">
+              <div className="relative w-full h-100">
+                <iframe
+                  height="100%" 
+                  width="100%" 
+                  id="geckoterminal-embed" 
+                  title="GeckoTerminal Embed" 
+                  src="https://www.geckoterminal.com/starknet-alpha/pools/0x5840a26097ef00e681c622053d07d38b87769d090cebf5cdafdd8b0fae17761?embed=1&info=0&swaps=0&grayscale=0&light_chart=0&chart_type=price&resolution=15m"
+                  allow="clipboard-write">
+                </iframe>
+              </div>
             </div>
           </div>
 
